@@ -8,7 +8,7 @@ The binary implements a simple banking interface with three options:
 - Get rich (disabled)
 - Exit
 
-Despite the presence of stack canaries, the program is vulnerable to a stack-based buffer overflow combined with an information leak, allowing us to "Return to win":
+Despite the presence of stack canaries, the program is vulnerable to a stack-based buffer overflow combined with an information leak, allowing us to *Return to win*:
 
 1. Leak the stack canary
 2. Bypass stack protection
