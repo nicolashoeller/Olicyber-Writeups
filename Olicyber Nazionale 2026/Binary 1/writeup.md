@@ -131,6 +131,22 @@ Displays success/failure message based on the `status` flag.
 
 ---
 
+## Hardcoded Data
+
+### Expected Array
+
+The `expected[]` array contains the final transformed values that the input must match after both `scramble()` and `twist()` transformations:
+
+![Bytes of expected array](attachments/expected_array.png)
+
+### Prem Array
+
+The `perm[]` array defines how characters are shuffled during the `scramble()` function:
+
+![Bytes of perm array](attachments/perm_array.png)
+
+---
+
 ## Reversing the Transformations
 
 To recover the flag, we need to work backwards from the `expected[]` array, applying inverse operations in reverse order of the original transformations.
