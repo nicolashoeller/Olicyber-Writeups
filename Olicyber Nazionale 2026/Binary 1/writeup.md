@@ -43,7 +43,7 @@ Key observations:
 ### Execution Flow
 
 The `atexit()` registration order:
-1. `epilogo` (rexecutes last)
+1. `epilogo` (executes last)
 2. `compare` (executes third)
 3. `twist` (executes second)
 4. `scramble` (executes first)
