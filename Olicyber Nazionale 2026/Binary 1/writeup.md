@@ -22,9 +22,9 @@ int __fastcall main(int argc, const char **argv, const char **envp)
   if ( strlen(s: input_buf) == 40 )
   {
     atexit(epilogo);
-    atexit(epilogo: compare);
-    atexit(epilogo: twist);
-    atexit(epilogo: scramble);
+    atexit(compare);
+    atexit(twist);
+    atexit(scramble);
     puts(s: "Elaborazione completata.");
     return 0;
   }
